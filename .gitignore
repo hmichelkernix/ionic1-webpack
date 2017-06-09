@@ -4,3 +4,6 @@
 node_modules/
 platforms/
 plugins/
+
+www/js/main.bundle.js
+www/js/main.bundle.js.map
