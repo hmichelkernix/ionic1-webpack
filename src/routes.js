@@ -1,6 +1,7 @@
 
 var templateUrl = {
-  main: require('./html/main.html')
+  main: require('./html/main.html'),
+  test: require('./html/test.html')
 };
 
 export default function ($stateProvider, $urlRouterProvider) {
@@ -9,6 +10,11 @@ export default function ($stateProvider, $urlRouterProvider) {
     .state('main', {
       url: '/',
       templateUrl: templateUrl.main
+    })
+    .state('test', {
+      url: '/test',
+      templateUrl: templateUrl.test,
+      controller: "TestController"
     });
   $urlRouterProvider.otherwise('/');
 
